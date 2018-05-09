@@ -1,0 +1,52 @@
+site_name: 公子学互联网技术
+site_url: http://ishenyi.github.io
+site_description: ishenyi 
+site_author: ishenyi
+
+repo_url: https://github.com/ishenyi
+
+copyright: Copyright &copy; 2017 <a href="https://twitter.com/sanyi">Yi Shen</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">MkDocs Team</a>.
+use_directory_urls: false
+site_favicon: favicon.ico
+pages:
+    - 首页: index.md
+
+theme:
+    name: material
+    palette:
+        primary: blue
+        accent: 'pink'
+    language: 'zh'
+    feature:
+        tabs: true
+
+extra_css:
+    - css/extra.css
+
+markdown_extensions:
+    - toc:
+        permalink: ♥︎
+    - admonition #!!! note summary info tip success fail question warning danger bug quote
+    - def_list
+    - codehilite(linenums=false,guess_lang=false) # linenums="2"
+    - footnotes #[^1]
+    - meta # title path source descrition hero
+    - pymdownx.superfences # admontion中持续写代码块
+    - pymdownx.details #折叠内筒 ？？？
+    - pymdownx.betterem(smart_enable=all) #粗斜
+    - pymdownx.caret # ^  ^^
+    - pymdownx.critic #{+++++}{----}{====}{~~>~~~}{>><<}
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_png
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.progressbar #[=10% "10%"]
+    - pymdownx.smartsymbols
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde # ~~~~
+
+
+
+plugins:
+    - search
